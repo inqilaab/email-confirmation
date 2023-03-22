@@ -29,11 +29,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgba(0, 0, 128, 0.7);
+            background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
             padding: 2rem;
             border-radius: 1rem;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
+            max-width: 60%;
             text-align: center;
         }
         .logo {
@@ -46,24 +46,27 @@
             font-size: 2.5rem;
             margin-bottom: 1rem;
             text-align: center;
+            color: #3a3a3a;
             animation: fadeIn 2s;
         }
         p {
             font-size: 1.4rem;
             text-align: center;
             margin-bottom: 1.5rem;
+            color: #3a3a3a;
             animation: fadeIn 2s;
         }
-        .gaming-icons {
+        .powered-by {
             display: flex;
-            justify-content: space-between;
-            width: 80%;
-            margin-bottom: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #3a3a3a;
         }
-        .desktop-icon,
-        .vr-icon {
-            font-size: 48px;
-            animation: fadeIn 2s;
+        .inqilaab-icon {
+            margin-left: 0.5rem;
+            width: 24px;
+            height: 24px;
         }
         @keyframes fadeIn {
             from {
@@ -80,11 +83,10 @@
         <img class="logo" src="https://inqilaab.github.io/email-confirmation/KhwabLogo.png" alt="Game Logo">
         <h1>Email Confirmed</h1>
         <p>Your email address has been successfully confirmed. Open the Khwab app on your desktop or VR device to continue your registration. We look forward to welcoming you!</p>
-        <div class="gaming-icons">
-            <i class="fas fa-desktop desktop-icon"></i>
-            <i class="fas fa-vr-cardboard vr-icon"></i>
+        <div class="powered-by">
+            <span>Powered by Inqilaab</span>
+            <img class="inqilaab-icon" src="https://inqilaab.github.io/email-confirmation/InqilaabIcon.png" alt="Inqilaab Icon">
         </div>
-        <p>Available on Desktop and VR devices</p>
     </div>
 </body>
 </html>
