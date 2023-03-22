@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Confirmation</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Comfortaa', cursive;
             background-image: url('https://inqilaab.github.io/email-confirmation/Background.png');
@@ -19,21 +25,6 @@
             height: 100vh;
             margin: 0;
         }
-        .logo {
-            width: 150px;
-            height: auto;
-            margin-bottom: 1rem;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        p {
-            font-size: 1.2rem;
-            text-align: center;
-            max-width: 80%;
-        }
         .container {
             display: flex;
             flex-direction: column;
@@ -42,6 +33,45 @@
             padding: 2rem;
             border-radius: 1rem;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            text-align: center;
+        }
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            animation: fadeIn 2s;
+        }
+        .gaming-icons {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 1.5rem;
+        }
+        .desktop-icon,
+        .vr-icon {
+            font-size: 48px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -49,7 +79,12 @@
     <div class="container">
         <img class="logo" src="https://inqilaab.github.io/email-confirmation/KhwabLogo.png" alt="Game Logo">
         <h1>Email Confirmed</h1>
-        <p>Your email address has been successfully confirmed. You may now return to Khwab to continue your registration. We look forward to welcoming you!</p>
+        <p>Your email address has been successfully confirmed. Open the Khwab app on your desktop or VR device to continue your registration. We look forward to welcoming you!</p>
+        <div class="gaming-icons">
+            <i class="fas fa-desktop desktop-icon"></i>
+            <i class="fas fa-vr-cardboard vr-icon"></i>
+        </div>
+        <p>Available on Desktop and VR devices</p>
     </div>
 </body>
 </html>
